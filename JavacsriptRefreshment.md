@@ -33,3 +33,21 @@ Control flow mengatur alur eksekusi pada statement atau jalannya program sesuai 
 
 ## Function
 Function di dalam javascript adalah sebuah Objek karena memiliki properti dan juga method. function digunakan untuk melakukan serangkain proses komputasi yang dapat digunakan berulang kali.
+
+## Class
+Class Merupakan sebuah prototype dari suatu object yang akan kita buat. Dalam sebuah Class terdapat Keyword Class, Nama Class, Constructor, method, dan attributes.
+
+## Async - Await
+Synchronous mengeksekusi setiap perintah satu persatu sesuai urutan kode yang ditulis. Asynchronous hasil oksekusi atau output todak selalu beradasarkan urutan kode,  tetapi berdasarkan waktu proses. Callback merupakan fungsi yang dieksekusi setlah fungsi lain selesai dijalankan.
+
+## DOM (Document Object Model)
+DOM merupakan API untuk HTML  yang merepresentasikan halaman web pada suatu dokumen menjadi sebuah object. DOM Selection Method:
+
+| Event  | Kegunaan |
+| ------------- | ------------- |
+| `getElementById()` | Element |
+| `getElementsByTagName()` | HTML Collection |
+| `getElementsByClassName()` | HTML Collection |
+| `querySelector()` | Element |
+| `querySelectorAll()` | nodeList |
+
