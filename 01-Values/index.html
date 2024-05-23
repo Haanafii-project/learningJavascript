@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="flex gap-4">
+        <div>
+            <input type="radio" name="category" value="New" id="newRadio">
+            <label for="newRadio">Brand New</label>
+        </div>
+        <div>
+            <input type="radio" name="category" value="Second" id="optionOne">
+            <label for="optionOne">Second</label>
+        </div>
+        <div>
+            <input type="radio" name="category" value="Refurbished" id="optionThree">
+            <label for="noptionThree">Refurbished</label>
+        </div>
+    </div>
+        
+    <button onclick="getValue()">Get Value</button>
+    <p id="result">result:  </p>
+
+    <script>
+        const radios = document.getElementsByName('category');
+
+        radios.forEach(radio => {
+            radio.addEventListener('change', () => {
+                const checkedRadio = Array.from(radios).find(radio => radio.checked);
+                if (checkedRadio) {
+                    console.log("Nilai yang dipilih:", checkedRadio.value);
+                } else {
+                    console.log("Tidak ada yang dipilih");
+                }
+            });
+        });
+
+        // const getValue = () => {
+        //     const radios = document.getElementsByName('category');
+        //     const checkedRadio = Array.from(radios).find(radio => radio.checked);
+
+        //     if (checkedRadio) {
+        //         console.log("Nilai yang dipilih:", checkedRadio.value);
+        //     } else {
+        //         console.log("Tidak ada yang dipilih");
+        //     }
+        // };
+
+    </script>
+</body>
+</html>
